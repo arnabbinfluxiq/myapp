@@ -1,0 +1,12 @@
+
+
+ <!--form part of library-->
+ <lib-showform *ngIf="formdata !=null" 
+ [formdata]="formdata" 
+ [formfieldrefresh]="formfieldrefresh" 
+ [formfieldrefreshdata]="formfieldrefreshdata" 
+ (onFormFieldChange)="listenFormFieldChange($event)" 
+ >
+</lib-showform>
+
+<router-outlet></router-outlet>
